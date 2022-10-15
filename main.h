@@ -6,7 +6,7 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-#inlude <stdard.h>
+#include <stdarg.h>
 
 /* utils.c */
 int _strlen.c
