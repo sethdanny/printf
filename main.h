@@ -4,18 +4,23 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-/**
- * struct flags - struct containing flags to "turn on"
- * when the flag specifier is passed to _printf()
- * @plus: flag for the '+' character
- * @space: flag for the ' ' character
- *  @hash: flag for the '#' character
- */
-typedef struct flags
-{
-	int plus;
-	int space;
-	int hash;
-} flags_t;
+#include <unistd.h>
+#include <stdlib.h>
+#inlude <stdard.h>
+
+/* utils.c */
+int _strlen.c
+int print(char *);
+char *itoa(long int, int);
+
+/* print a character */
+int _putchar(char c);
+
+/* printf.c */
+int _printf(const char *format, ...);
+
+/* handler.c */
+int handler(const char *, va_list, int *);
+int percent_handler(const char *, va_list, int *);
 
 #endif
