@@ -1,12 +1,12 @@
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
 
 /* utils.c */
-int _strlen(const char *str);
+int _strlen(const char *);
 int print(char *);
 char *itoa(long int, int);
 
@@ -14,7 +14,7 @@ char *itoa(long int, int);
 int _printf(const char *, ...);
 
 /* handler.c */
-int handler(const char *, va_list, int *);
+int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 
 /* printers */
@@ -45,5 +45,6 @@ typedef struct _format
 	char type;
 	int (*f)(va_list);
 } format;
+
 
 #endif

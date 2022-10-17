@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _printf - produces output according to the format
- * @format: is a character string. The format string
+ * _printf - Produces output according to a format
+ * @format: Is a character string. The format string
  * is composed of zero or more directives
  *
  * Return: The number of characters printed (excluding
- * the null byte used to end the output to strings
- */
+ * the null byte used to end output to strings)
+ **/
 int _printf(const char *format, ...)
 {
 	int size;
@@ -17,7 +17,6 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	size = _strlen(format);
-
 	if (size <= 0)
 		return (0);
 
@@ -25,7 +24,7 @@ int _printf(const char *format, ...)
 	size = handler(format, args);
 
 	_putchar(-1);
-	va_ends(args);
+	va_end(args);
 
 	return (size);
 }
